@@ -11,15 +11,15 @@
 
   <div class="w-[100vw] h-[100vh] bg-slate-400 flex flex-col items-center justify-center">
 
-
+<div class="mx-auto my-auto bg-stone-500 p-10 rounded-md shadow-2xl shadow-gray-900">
 
     <h1 class ="font-bold text-3xl text-white my-3">PASSWORD GENERATOR</h1>
 
 
-      <div class="display-container flex ">
-        <input readonly placeholder="PASSWORD" class="display" c data-passwordDisplay >
+      <div class="display-container flex justify-between">
+        <input readonly placeholder="PASSWORD" class="display"  data-passwordDisplay >
         
-        <button data-copy>
+        <button data-copy class="w-6">
 
           <span data-copying-message></span>
           <img src="copy-icon-vector-illustration.webp" width="23" height="23" alt="copy">
@@ -32,7 +32,7 @@
       <div class="input">
 
         <div class="password-length flex  justify-between  my-4">
-            <p class="text-bold text-white text-xl">PASSWORD LENGTH</p>
+            <p class="text-bold text-white text-[20px]">PASSWORD LENGTH</p>
             <P data-length class="text-2xl mx-3 text-white">0</P>
         </div>
 
@@ -61,16 +61,16 @@
 
             <!-- strength-section -->
 
-            <div class="strength-section flex justify-between">
-                <p class="text-white text-md text-bold" strengthindi>STRENGTH</p>
+            <div class="strength-section flex justify-between my-4">
+                <p class="text-white text-md text-bold text-[20px]" strengthindi>STRENGTH</p>
                 <div strength-indicator class="w-[50px] h-[20px] rounded-full bg-white "></div>
             </div>
             <!-- generate-button -->
 
-            <button class="generate-button bg-zinc-200 w-[300px] h-[30px] my-4 rounded-md text-xl text-bold hover:scale-105 transition-all duration-300 ">GENERATE PASSWORD</button>
+            <button class="generate-button bg-zinc-200 w-[300px] h-[30px] mt-6 rounded-md text-xl text-bold hover:scale-105 transition-all duration-300 ">GENERATE PASSWORD</button>
 
       </div>
-
+    </div>
 
   </div>
 
