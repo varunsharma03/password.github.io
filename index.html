@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="w-[100vw] h-[100vh] bg-slate-400 flex flex-col items-center justify-center">
+
+
+
+    <h1 class ="font-bold text-3xl text-white my-3">PASSWORD GENERATOR</h1>
+
+
+      <div class="display-container flex ">
+        <input readonly placeholder="PASSWORD" class="display" c data-passwordDisplay >
+        
+        <button data-copy>
+
+          <span data-copying-message></span>
+          <img src="copy-icon-vector-illustration.webp" width="23" height="23" alt="copy">
+
+        </button>
+
+      </div>
+
+
+      <div class="input">
+
+        <div class="password-length flex  justify-between  my-4">
+            <p class="text-bold text-white text-xl">PASSWORD LENGTH</p>
+            <P data-length class="text-2xl mx-3 text-white">0</P>
+        </div>
+
+          <!-- FOR RANGE -->
+        <input type="range" min="1" max="20" step="1" class="slider"  data-length-slider>
+
+
+        <!-- FOR-CHECKBOX -->
+            <div>
+                        <input type="checkbox" id="uppercase"  >
+                        <label for="uppercase"class="text-white text-md text-bold ">INCLUDES UPPERCASE</label>
+                    
+            </div>
+            <div>
+                        <input type="checkbox" id="lowercase" >
+                        <label for="lowercase"class="text-white text-md text-bold">INCLUDES LOWERCASE</label>
+            </div>
+            <div>
+                          <input type="checkbox" id="numbers" >
+                          <label for="numbers"class="text-white text-md text-bold">INCLUDES NUMBERS</label>
+            </div>
+            <div>
+                          <input type="checkbox" id="symbols" >
+                          <label for="symbols"class="text-white text-md text-bold">INCLUDES SYMBOLS</label>
+            </div>
+
+            <!-- strength-section -->
+
+            <div class="strength-section flex justify-between">
+                <p class="text-white text-md text-bold" strengthindi>STRENGTH</p>
+                <div strength-indicator class="w-[50px] h-[20px] rounded-full bg-white "></div>
+            </div>
+            <!-- generate-button -->
+
+            <button class="generate-button bg-zinc-200 w-[300px] h-[30px] my-4 rounded-md text-xl text-bold hover:scale-105 transition-all duration-300 ">GENERATE PASSWORD</button>
+
+      </div>
+
+
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
